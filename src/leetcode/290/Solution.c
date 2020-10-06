@@ -1,4 +1,4 @@
-#include <string.h>
+#include "Solution.h"
 
 #define MAX_WORDS_NUM 1000
 bool wordPattern(char * pattern, char * s){
