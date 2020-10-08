@@ -1,0 +1,2 @@
+#Program(['main.c', 'Solution.c']);
+Program('main', Glob('*.c'));
