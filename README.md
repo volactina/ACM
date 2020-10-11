@@ -2,7 +2,13 @@
 
 use guide.py to copy template files more quickly
 
-Plan to use CUnit for testing codes
+# Test Framework
+
+May Consider to use CUnit for testing C codes (Since CxxTest is designed for C++ and cannot test every C Program), however, CUnit seems to be too big for simple programs
+
+Therefore, we now consider to use CuTest Framework since it's simpler to use
+
+# Reference
 
 http://cxxtest.com/
 
