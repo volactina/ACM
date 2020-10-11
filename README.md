@@ -1,5 +1,9 @@
 # ACM
 
+use guide.py to copy template files more quickly
+
+Plan to use CUnit for testing codes
+
 http://cxxtest.com/
 
 https://code.visualstudio.com/docs/cpp/config-mingw
