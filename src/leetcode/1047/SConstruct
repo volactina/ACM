@@ -1,0 +1,38 @@
+ROOT_PATH = '#\\..\\..\\..'
+TOOLS_PATH = ROOT_PATH + '\\tools'
+env = Environment(tools = ['mingw'])
+env.Append(CCFLAGS = ['-std=c99'])
+Solution = ['Solution.c']
+main = ['main.c'] + Solution
+env.Program(target = 'main', source = main);
+# CXXTEST_PATH = TOOLS_PATH + '\\cxxtest-4.4'
+# CXXTEST_BIN_PATH = CXXTEST_PATH + '\\bin'
+# CXXTEST_SRC_PATH = CXXTEST_PATH + '\\cxxtest'
+# CXXTEST_SCONS_PATH = CXXTEST_PATH + '\\build_tools\\SCons'
+# import os
+# envtwo = DefaultEnvironment(ENV = {'PATH' : os.environ['PATH']}, CXXTEST_INSTALL_DIR=env.GetBuildPath(CXXTEST_PATH),tools = ['default','cxxtest'], toolpath = ['C:\\ACM\\tools\\cxxtest-4.4\\python\\python3\\cxxtest',
+                                                               # env.GetBuildPath(CXXTEST_SCONS_PATH),env.GetBuildPath(CXXTEST_BIN_PATH)])
+# envtwo.Append(CXXTEST=env.GetBuildPath(CXXTEST_BIN_PATH))
+# envtwo = Environment(tools = ['mingw', 'cxxtest'], toolpath = ['C:\\ACM\\tools\\cxxtest-4.4\\python\\python3\\cxxtest',
+                                                               # env.GetBuildPath(CXXTEST_SCONS_PATH), 
+                                                               # env.GetBuildPath(CXXTEST_PATH)])
+# env.AppendENVPath('PATH', env.GetBuildPath(CXXTEST_BIN_PATH));                                                              
+# env.Append(tools = ['cxxtest'], toolpath = ['C:\\ACM\\tools\\cxxtest-4.4\\python\\python3\\cxxtest',
+                                                               # env.GetBuildPath(CXXTEST_SCONS_PATH), 
+                                                               # env.GetBuildPath(CXXTEST_PATH)])
+# envtwo = Environment(tools = [’default’,(’cxxtest’, {’CXXTEST_INSTALL_DIR’ : 'C:\\ACM\\tools\\cxxtest-4.4'})])
+# envtwo.AppendENVPath('PATH', env.GetBuildPath(CXXTEST_BIN_PATH));
+# env.Append(tools = ['cxxtest'], toolpath = [env.GetBuildPath(CXXTEST_PATH), env.GetBuildPath(CXXTEST_SCONS_PATH)])
+# env.Environment(tools = ['CxxTest'], toolpath = [env.GetBuildPath(CXXTEST_PATH), env.GetBuildPath(CXXTEST_SCONS_PATH)])
+# env.Append(tools = [('cxxtest', {'CXXTEST_INSTALL_DIR' : env.GetBuildPath(CXXTEST_PATH)})])
+# env.Append(toolpath = env.GetBuildPath(CXXTEST_SCONS_PATH))
+#print(env.GetBuildPath(ROOT_PATH))
+#print(env.GetBuildPath(TOOLS_PATH))
+# print(env.GetBuildPath(CXXTEST_PATH))
+# print(env.GetBuildPath(CXXTEST_BIN_PATH))
+# print(env.GetBuildPath(CXXTEST_SRC_PATH))
+# print(env.GetBuildPath(CXXTEST_SCONS_PATH))
+#print(env.Dump())
+# cxxtest = 'myCxxTest.h'
+# envtwo.CxxTest(target = 'ccxxtest', source = 'myCxxTest.t.h')
+# env.CxxTest(target = 'ccxxtest', source = 'myCxxTest.t.h')
